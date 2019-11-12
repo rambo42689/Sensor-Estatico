@@ -1,0 +1,275 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack PS3
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00003 
+   (rule
+   )
+   (wire (path BOT 25400  750000 -2004000 -635000 -2004000 -635000 254000
+     -754000 254000 -754000 496000)
+    (connect (terminal pin "TOP ARDUINO"-3) (terminal pin "HX711 OUTPUT"-3))
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   (wire (path TOP 25400  -889000 -2286000 -889000 -2222500 -4381500 -2222500
+     -4381500 -1143000 -4421520 -1143000 -4421520 635000 -4100000 635000
+     -4100000 250000)
+    (connect (terminal wire) (terminal smd R1-1))
+   )
+   (wire (path TOP 25400  -889000 -2286000 -889000 -4000500 -1012000 -4000500
+     -1012000 -4250000)
+    (connect (terminal wire) (terminal pin SD-0))
+   )
+   (wire (path TOP 25400  750000 -2258000 750000 -2286000 -889000 -2286000)
+    (connect (terminal pin "TOP ARDUINO"-4) (terminal wire))
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path BOT 25400  -1258000 -2750000 -1258000 -3362572 -758000 -3362572
+     -758000 -4250000)
+    (connect (terminal pin "RIFHT ARDUINO"-2) (terminal pin SD-1))
+   )
+   )
+   (Net #00012 
+   (rule
+   )
+   (wire (path BOT 25400  -242000 -2750000 -242000 -3625406 -381000 -3625406
+     -381000 -4381500 4000 -4381500 4000 -4250000)
+    (connect (terminal pin "RIFHT ARDUINO"-6) (terminal pin SD-4))
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   (wire (path BOT 25400  12000 -2750000 12000 -2476500 -381000 -2476500
+     -381000 -3397298 -504000 -3397298 -504000 -4250000)
+    (connect (terminal pin "RIFHT ARDUINO"-7) (terminal pin SD-2))
+   )
+   )
+   (Net #00014 
+   (rule
+   )
+   (wire (path BOT 25400  266000 -2750000 266000 -3746500 -250000 -3746500
+     -250000 -4250000)
+    (connect (terminal pin "RIFHT ARDUINO"-8) (terminal pin SD-3))
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   (wire (path BOT 25400  520000 -2750000 520000 -4000500 258000 -4000500
+     258000 -4250000)
+    (connect (terminal pin "RIFHT ARDUINO"-9) (terminal pin SD-5))
+   )
+   )
+   (Net #00016 
+   (rule
+   )
+   (wire (path TOP 25400  -1786000 -1000000 -4350000 -1000000 -4350000 500000)
+    (connect (terminal pin "LEFT ARDUINO"-0) (terminal smd R4-1))
+   )
+   )
+   (Net #00018 
+   (rule
+   )
+   (wire (path TOP 25400  -1278000 -1000000 -1278000 -302087 -3850000 -302087
+     -3850000 750000)
+    (connect (terminal pin "LEFT ARDUINO"-2) (terminal smd R3-1))
+   )
+   )
+   (Net #00022 
+   (rule
+   )
+   (wire (path BOT 25400  -262000 -1000000 -262000 -422879 -500000 -422879
+     -500000 496000)
+    (connect (terminal pin "LEFT ARDUINO"-6) (terminal pin "HX711 OUTPUT"-2))
+   )
+   )
+   (Net #00023 
+   (rule
+   )
+   (wire (path BOT 25400  -8000 -1000000 -8000 34970 -246000 34970
+     -246000 496000)
+    (connect (terminal pin "LEFT ARDUINO"-7) (terminal pin "HX711 OUTPUT"-1))
+   )
+   )
+   (Net #00026 
+   (rule
+   )
+   )
+   (Net #00027 
+   (rule
+   )
+   (wire (path TOP 25400  -3619500 317500 -3619500 333167 -3750000 333167
+     -3750000 750000)
+    (connect (terminal via) (terminal smd R3-0))
+   )
+   (wire (path BOT 25400  -3750000 -3000000 -3750000 -2781441 -3619500 -2781441
+     -3619500 317500)
+    (connect (terminal pin RED-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -3619500 317500)
+   )
+   (Net #00028 
+   (rule
+   )
+   (wire (path TOP 25400  -3746500 -571500 -3746500 -560029 -4250000 -560029
+     -4250000 500000)
+    (connect (terminal via) (terminal smd R4-0))
+   )
+   (wire (path BOT 25400  -3750000 -2000000 -3750000 -571500 -3746500 -571500)
+    (connect (terminal pin GREEN-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -3746500 -571500)
+   )
+   (Net #00030 
+   (rule
+   )
+   (wire (path BOT 25400  8000 3250000 4000 3250000 4000 2250000)
+    (connect (terminal pin "SENSOR INPUT"-1) (terminal pin "HX711 INPUT"-1))
+   )
+   (wire (path TOP 25400  8000 3250000 -246000 3250000)
+    (connect (terminal pin "SENSOR INPUT"-1) (terminal pin "SENSOR INPUT"-2))
+   )
+   )
+   (Net #00031 
+   (rule
+   )
+   (wire (path BOT 25400  -250000 2250000 -250000 2984500 -754000 2984500
+     -754000 3250000)
+    (connect (terminal pin "HX711 INPUT"-2) (terminal pin "SENSOR INPUT"-4))
+   )
+   )
+   (Net #00032 
+   (rule
+   )
+   (wire (path BOT 25400  -504000 2250000 -504000 2857500 -1008000 2857500
+     -1008000 3250000)
+    (connect (terminal pin "HX711 INPUT"-3) (terminal pin "SENSOR INPUT"-5))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 25400  246000 -1000000 246000 -2000000 -3496000 -2000000)
+    (connect (terminal pin "LEFT ARDUINO"-8) (terminal pin GREEN-1))
+   )
+   (wire (path BOT 25400  258000 2250000 258000 1223348 8000 1223348
+     8000 496000)
+    (connect (terminal pin "HX711 INPUT"-0) (terminal pin "HX711 OUTPUT"-0))
+   )
+   (wire (path BOT 25400  8000 496000 8000 254000 246000 254000
+     246000 -1000000)
+    (connect (terminal pin "HX711 OUTPUT"-0) (terminal pin "LEFT ARDUINO"-8))
+   )
+   (wire (path BOT 25400  262000 3250000 262000 2984500 258000 2984500
+     258000 2250000)
+    (connect (terminal pin "SENSOR INPUT"-0) (terminal pin "HX711 INPUT"-0))
+   )
+   (wire (path BOT 25400  -3496000 -2000000 -3496000 -3000000)
+    (connect (terminal pin GREEN-1) (terminal pin RED-1))
+   )
+   (wire (path TOP 25400  262000 3250000 262000 3365500 -500000 3365500
+     -500000 3250000)
+    (connect (terminal pin "SENSOR INPUT"-0) (terminal pin "SENSOR INPUT"-3))
+   )
+   )
+  )
+ )

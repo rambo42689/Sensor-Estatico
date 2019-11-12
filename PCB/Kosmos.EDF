@@ -1,0 +1,528 @@
+(PCB Kosmos
+ (parser
+  (host_cad ARES)
+  (host_version 8.7 SP3)
+ )
+ (resolution mm 100000)
+ (unit mm)
+ (structure
+  (boundary (rect pcb -44.27000 -44.10020 9.50660 34.10020))
+  (flip_style mirror_first)
+  (layer TOP (type signal) (direction horizontal))
+  (layer I1 (type signal) (direction off))
+  (layer I2 (type signal) (direction off))
+  (layer I3 (type signal) (direction off))
+  (layer I4 (type signal) (direction off))
+  (layer I5 (type signal) (direction off))
+  (layer I6 (type signal) (direction off))
+  (layer I7 (type signal) (direction off))
+  (layer I8 (type signal) (direction off))
+  (layer I9 (type signal) (direction off))
+  (layer I10 (type signal) (direction off))
+  (layer I11 (type signal) (direction off))
+  (layer I12 (type signal) (direction off))
+  (layer I13 (type signal) (direction off))
+  (layer I14 (type signal) (direction off))
+  (layer BOT (type signal) (direction vertical))
+  (grid via  0.63500)
+  (grid wire 0.63500)
+  (control
+   (via_at_smd off)
+   (off_grid on)
+  )
+  (via
+   $VIA#0_SIGNAL
+   (spare
+    $VIA#0_POWER
+    PS3
+   )
+  )
+  (rule
+   (width 0.25400)
+   (clearance 0.38100)
+   (clearance 0.25400 (type wire_via))
+   (clearance 0.25400 (type wire_smd))
+   (clearance 0.25400 (type wire_pin))
+   (clearance 0.25400 (type wire_wire))
+   (clearance 0.25400 (type via_pin))
+   (clearance 0.25400 (type via_via))
+   (clearance 0.25400 (type via_smd))
+  )
+ )
+ (placement
+  (component "CON6_1X6_U_FCI_HX711 INPUT" (place "HX711 INPUT" -2.50000 22.50000 front 180
+  ))
+  (component "ARDUINO-SIL10_LEFT ARDUINO" (place "LEFT ARDUINO" -17.86000 -10.00000 back 180
+  ))
+  (component "ARDUINO-SIL10_RIFHT ARDUINO" (place "RIFHT ARDUINO" -17.66000 -27.50000 front 0
+  ))
+  (component "ARDUINO-SIL6_TOP ARDUINO" (place "TOP ARDUINO" 7.50000 -12.42000 back 90
+  ))
+  (component "CON4_1X4_U_FCI_HX711 OUTPUT" (place "HX711 OUTPUT" -2.46000 4.96000 front 180
+  ))
+  (component "CON6_1X6_U_FCI_SENSOR INPUT" (place "SENSOR INPUT" -2.46000 32.50000 front 180
+  ))
+  (component RESC1005X40_R1 (place R1 -40.00000 2.50000 front 180))
+  (component RESC1005X40_R4 (place R4 -42.50000 5.00000 front 180))
+  (component RESC1005X40_R3 (place R3 -37.50000 7.50000 front 180))
+  (component CON6_1X6_U_FCI_SD (place SD -5.04000 -42.50000 front 0))
+  (component CON2_1X2_U_FCI_GREEN (place GREEN -37.50000 -20.00000 front 0))
+  (component CON2_1X2_U_FCI_RED (place RED -37.50000 -30.00000 front 0))
+ )
+ (library
+  (image "CON6_1X6_U_FCI_HX711 INPUT" (side front)
+   (outline (rect TOP -9.09320 -1.60020 11.63320 2.54000))
+   (pin PS0 (rotate 0) 0 -5.08000 0.00000)
+   (pin PS0 (rotate 0) 1 -2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 0.00000 0.00000)
+   (pin PS0 (rotate 0) 3 2.54000 0.00000)
+   (pin PS0 (rotate 0) 4 5.08000 0.00000)
+   (pin PS0 (rotate 0) 5 7.62000 0.00000)
+  )
+  (image "ARDUINO-SIL10_LEFT ARDUINO" (side back)
+   (outline (rect TOP -1.37160 -2.00660 24.23160 2.00660))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 2.54000 0.00000)
+   (pin PS1 (rotate 0) 2 5.08000 0.00000)
+   (pin PS1 (rotate 0) 3 7.62000 0.00000)
+   (pin PS1 (rotate 0) 4 10.16000 0.00000)
+   (pin PS1 (rotate 0) 5 12.70000 0.00000)
+   (pin PS1 (rotate 0) 6 15.24000 0.00000)
+   (pin PS1 (rotate 0) 7 17.78000 0.00000)
+   (pin PS1 (rotate 0) 8 20.32000 0.00000)
+   (pin PS1 (rotate 0) 9 22.86000 0.00000)
+  )
+  (image "ARDUINO-SIL10_RIFHT ARDUINO" (side front)
+   (outline (rect TOP -1.37160 -2.00660 24.23160 2.00660))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 2.54000 0.00000)
+   (pin PS1 (rotate 0) 2 5.08000 0.00000)
+   (pin PS1 (rotate 0) 3 7.62000 0.00000)
+   (pin PS1 (rotate 0) 4 10.16000 0.00000)
+   (pin PS1 (rotate 0) 5 12.70000 0.00000)
+   (pin PS1 (rotate 0) 6 15.24000 0.00000)
+   (pin PS1 (rotate 0) 7 17.78000 0.00000)
+   (pin PS1 (rotate 0) 8 20.32000 0.00000)
+   (pin PS1 (rotate 0) 9 22.86000 0.00000)
+  )
+  (image "ARDUINO-SIL6_TOP ARDUINO" (side back)
+   (outline (rect TOP -1.37160 -2.00660 14.07160 2.00660))
+   (pin PS1 (rotate 0) 0 0.00000 0.00000)
+   (pin PS1 (rotate 0) 1 2.54000 0.00000)
+   (pin PS1 (rotate 0) 2 5.08000 0.00000)
+   (pin PS1 (rotate 0) 3 7.62000 0.00000)
+   (pin PS1 (rotate 0) 4 10.16000 0.00000)
+   (pin PS1 (rotate 0) 5 12.70000 0.00000)
+  )
+  (image "CON4_1X4_U_FCI_HX711 OUTPUT" (side front)
+   (outline (rect TOP -6.55320 -1.60020 9.09320 2.54000))
+   (pin PS0 (rotate 0) 0 -2.54000 0.00000)
+   (pin PS0 (rotate 0) 1 0.00000 0.00000)
+   (pin PS0 (rotate 0) 2 2.54000 0.00000)
+   (pin PS0 (rotate 0) 3 5.08000 0.00000)
+  )
+  (image "CON6_1X6_U_FCI_SENSOR INPUT" (side front)
+   (outline (rect TOP -9.09320 -1.60020 11.63320 2.54000))
+   (pin PS0 (rotate 0) 0 -5.08000 0.00000)
+   (pin PS0 (rotate 0) 1 -2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 0.00000 0.00000)
+   (pin PS0 (rotate 0) 3 2.54000 0.00000)
+   (pin PS0 (rotate 0) 4 5.08000 0.00000)
+   (pin PS0 (rotate 0) 5 7.62000 0.00000)
+  )
+  (image RESC1005X40_R1 (side front)
+   (outline (rect TOP -0.47500 -0.47500 1.47500 0.47500))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 1.00000 0.00000)
+  )
+  (image RESC1005X40_R4 (side front)
+   (outline (rect TOP -0.47500 -0.47500 1.47500 0.47500))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 1.00000 0.00000)
+  )
+  (image RESC1005X40_R3 (side front)
+   (outline (rect TOP -0.47500 -0.47500 1.47500 0.47500))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 1.00000 0.00000)
+  )
+  (image CON6_1X6_U_FCI_SD (side front)
+   (outline (rect TOP -9.09320 -1.60020 11.63320 2.54000))
+   (pin PS0 (rotate 0) 0 -5.08000 0.00000)
+   (pin PS0 (rotate 0) 1 -2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 0.00000 0.00000)
+   (pin PS0 (rotate 0) 3 2.54000 0.00000)
+   (pin PS0 (rotate 0) 4 5.08000 0.00000)
+   (pin PS0 (rotate 0) 5 7.62000 0.00000)
+  )
+  (image CON2_1X2_U_FCI_GREEN (side front)
+   (outline (rect TOP -4.01320 -1.60020 6.55320 2.54000))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (image CON2_1X2_U_FCI_RED (side front)
+   (outline (rect TOP -4.01320 -1.60020 6.55320 2.54000))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+  )
+  (padstack PS0 (absolute on)
+   (shape (circle TOP 1.52400 0 0))
+   (shape (circle I1 1.52400 0 0))
+   (shape (circle I2 1.52400 0 0))
+   (shape (circle I3 1.52400 0 0))
+   (shape (circle I4 1.52400 0 0))
+   (shape (circle I5 1.52400 0 0))
+   (shape (circle I6 1.52400 0 0))
+   (shape (circle I7 1.52400 0 0))
+   (shape (circle I8 1.52400 0 0))
+   (shape (circle I9 1.52400 0 0))
+   (shape (circle I10 1.52400 0 0))
+   (shape (circle I11 1.52400 0 0))
+   (shape (circle I12 1.52400 0 0))
+   (shape (circle I13 1.52400 0 0))
+   (shape (circle I14 1.52400 0 0))
+   (shape (circle BOT 1.52400 0 0))
+  )
+  (padstack PS1 (absolute on)
+   (shape (rect TOP -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I1 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I2 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I3 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I4 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I5 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I6 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I7 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I8 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I9 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I10 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I11 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I12 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I13 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect I14 -0.76200 -1.27000 0.76200 1.27000))
+   (shape (rect BOT -0.76200 -1.27000 0.76200 1.27000))
+  )
+  (padstack PS2 (absolute on) (shape (rect TOP -0.27940 -0.30480 0.27940 0.30480)))
+  (padstack PS3 (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_SIGNAL (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_POWER (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+ )
+ (network
+  (net "#00003"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "TOP ARDUINO"-3 "HX711 OUTPUT"-3)
+  )
+  (net "#00004"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "TOP ARDUINO"-4 R1-1 SD-0)
+  )
+  (net "#00008"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "RIFHT ARDUINO"-2 SD-1)
+  )
+  (net "#00012"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "RIFHT ARDUINO"-6 SD-4)
+  )
+  (net "#00013"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "RIFHT ARDUINO"-7 SD-2)
+  )
+  (net "#00014"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "RIFHT ARDUINO"-8 SD-3)
+  )
+  (net "#00015"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "RIFHT ARDUINO"-9 SD-5)
+  )
+  (net "#00016"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "LEFT ARDUINO"-0 R4-1)
+  )
+  (net "#00018"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "LEFT ARDUINO"-2 R3-1)
+  )
+  (net "#00022"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "LEFT ARDUINO"-6 "HX711 OUTPUT"-2)
+  )
+  (net "#00023"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "LEFT ARDUINO"-7 "HX711 OUTPUT"-1)
+  )
+  (net "#00026"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins R1-0)
+  )
+  (net "#00027"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins R3-0 RED-0)
+  )
+  (net "#00028"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins R4-0 GREEN-0)
+  )
+  (net "#00030"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "HX711 INPUT"-1 "SENSOR INPUT"-1 "SENSOR INPUT"-2)
+  )
+  (net "#00031"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "HX711 INPUT"-2 "SENSOR INPUT"-4)
+  )
+  (net "#00032"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "HX711 INPUT"-3 "SENSOR INPUT"-5)
+  )
+  (net "GND"
+   (circuit
+    (use_layer TOP BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+    (pins "HX711 INPUT"-0 "LEFT ARDUINO"-8 "HX711 OUTPUT"-0 "SENSOR INPUT"-0 "SENSOR INPUT"-3
+    GREEN-1 RED-1)
+  )
+  (class POWER
+   "GND"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+  (class SIGNAL
+   "#00003"
+   "#00004"
+   "#00008"
+   "#00012"
+   "#00013"
+   "#00014"
+   "#00015"
+   "#00016"
+   "#00018"
+   "#00022"
+   "#00023"
+   "#00026"
+   "#00027"
+   "#00028"
+   "#00030"
+   "#00031"
+   "#00032"
+   "{NC}"
+   "{VOID}"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+ )
+ (wiring
+   (wire (path TOP 0.25400 -8.89000 -24.13000 -43.18000 -24.13000 -44.21520 -23.09480
+    -44.21520 5.71500 -41.91000 5.71500 -41.00000 4.80500 -41.00000 2.50000) (net "#00004")
+  )
+   (wire (path TOP 0.25400 -8.89000 -24.13000 -8.89000 -41.27000 -10.12000 -42.50000
+  ) (net "#00004"))
+   (wire (path TOP 0.25400 7.50000 -22.58000 -7.34000 -22.58000 -8.89000 -24.13000) (net "#00004")
+  )
+   (wire (path TOP 0.25400 -17.86000 -10.00000 -42.54500 -10.00000 -43.50000 -9.04500
+   -43.50000 5.00000) (net "#00016"))
+   (wire (path TOP 0.25400 -12.78000 -10.00000 -12.78000 0.63500 -13.41500 1.27000 -37.46500 1.27000
+   -38.50000 2.30500 -38.50000 7.50000) (net "#00018"))
+   (wire (path TOP 0.25400 -37.50000 7.50000 -37.50000 2.93797 -36.57600 2.93797 -36.33897 3.17500
+   -36.19500 3.17500) (net "#00027"))
+   (wire (path TOP 0.25400 -42.50000 5.00000 -42.50000 2.49500 -37.46500 -2.54000) (net "#00028")
+  )
+  (wire (path TOP 0.25400 0.08000 32.50000 -2.46000 32.50000) (net "#00030"))
+   (wire (path TOP 0.25400 2.46000 -10.00000 2.46000 -19.05000 1.51000 -20.00000 -34.96000 -20.00000
+  ) (net "GND"))
+   (wire (path TOP 0.25400 2.62000 32.50000 1.46500 33.65500 -3.84500 33.65500 -5.00000 32.50000
+  ) (net "GND"))
+   (wire (path BOT 0.25400 7.50000 -20.04000 -5.71500 -20.04000 -6.35000 -19.40500 -6.35000 3.77000
+   -7.54000 4.96000) (net "#00003"))
+   (wire (path BOT 0.25400 -12.58000 -27.50000 -12.58000 -29.96906 -7.58000 -34.96906
+   -7.58000 -42.50000) (net "#00008"))
+   (wire (path BOT 0.25400 -2.42000 -27.50000 -2.42000 -35.44000 -3.81000 -36.83000 -3.81000 -43.18000
+   -3.17500 -43.81500 -1.27500 -43.81500 0.04000 -42.50000) (net "#00012"))
+   (wire (path BOT 0.25400 0.12000 -27.50000 0.12000 -25.52000 -0.63500 -24.76500 -3.17500 -24.76500
+    -3.81000 -25.40000 -3.81000 -34.33000 -5.04000 -35.56000 -5.04000 -42.50000) (net "#00013")
+  )
+   (wire (path BOT 0.25400 2.66000 -27.50000 2.66000 -37.34000 -2.50000 -42.50000) (net "#00014")
+  )
+   (wire (path BOT 0.25400 5.20000 -27.50000 5.20000 -39.88000 2.58000 -42.50000) (net "#00015")
+  )
+   (wire (path BOT 0.25400 -2.62000 -10.00000 -2.62000 -5.08000 -5.00000 -2.70000 -5.00000 4.96000
+  ) (net "#00022"))
+   (wire (path BOT 0.25400 -0.08000 -10.00000 -0.08000 -0.63500 -2.46000 1.74500 -2.46000 4.96000
+  ) (net "#00023"))
+   (wire (path BOT 0.25400 -36.19500 3.17500 -36.19500 -28.69500 -37.50000 -30.00000
+  ) (net "#00027"))
+   (wire (path BOT 0.25400 -37.46500 -2.54000 -37.50000 -2.57500 -37.50000 -20.00000
+  ) (net "#00028"))
+   (wire (path BOT 0.25400 0.04000 22.50000 0.04000 31.07500 0.08000 31.11500 0.08000 32.50000
+  ) (net "#00030"))
+   (wire (path BOT 0.25400 -2.50000 22.50000 -2.50000 27.46000 -7.54000 32.50000) (net "#00031")
+  )
+   (wire (path BOT 0.25400 -5.04000 22.50000 -5.04000 27.46000 -10.08000 32.50000) (net "#00032")
+  )
+   (wire (path BOT 0.25400 2.58000 22.50000 2.58000 7.46000 0.08000 4.96000) (net "GND")
+  )
+   (wire (path BOT 0.25400 0.08000 4.96000 0.08000 3.65000 2.46000 1.27000 2.46000 -10.00000
+  ) (net "GND"))
+  (wire (path BOT 0.25400 -34.96000 -20.00000 -34.96000 -30.00000) (net "GND"))
+   (wire (path BOT 0.25400 2.58000 22.50000 2.58000 29.80500 2.62000 29.84500 2.62000 32.50000
+  ) (net "GND"))
+  (via PS3 -36.19500 3.17500 (net "#00027"))
+  (via PS3 -37.46500 -2.54000 (net "#00028"))
+ )
+)
