@@ -6,9 +6,9 @@
  *    --- Funcionamento: 
  * - O sistema irá inicilizar, definir as variáveis e inicializar os módulos. 
  * - Caso todos os processos sejam sucedidos, os LED's amarelo e verde piscaram juntos 1 vez,
- *   para em seguida ficar acesso somente o verde. Quando o verde ficar acesso, isso significa que em 30 segundos será iniciada a obtenção dos dados.
- * - O sistema irá rodar por 60 segundos, até que o "Delay_time" atingido. (60000 ms por padrão, é configurável nos #defines).
- * - Quando o processo inteiro for concluído (30 + 60 segundos no total), o LED verde irá começar a piscar DEVAGAR.
+ *   para em seguida ficar acesso somente o verde. Quando o verde ficar acesso, isso significa que em 5 segundos será iniciada a obtenção dos dados.
+ * - O sistema irá rodar por 15 segundos, até que o "Delay_time" atingido. (15000 ms por padrão, é configurável nos #defines).
+ * - Quando o processo inteiro for concluído (5 + 15 segundos no total), o LED verde irá começar a piscar DEVAGAR.
  * - Erros sinalizados pelos LED's:
  * Amarelo piscando RAPIDAMENTE -(após inicialização) : falha em reconhecer o módulo do cartão SD, o próprio cartão SD não está inserido corretamente.
  * Amarelo piscando DEVAGAR -(após inicialização): falha em abrir o arquivo no cartão SD, problema no cartão.
@@ -31,7 +31,7 @@ const int chipSelect = 10;                               // Seta a saída 10 com
 SdFile dataFile;
 SdFat sd;
 // ************** Controle de Estado Operacional ******************
-#define Delay_Time 60000                                 //Tempo de funcionamento do Modo Online (usado para auto-desligamento).  OBS: é em milisegundos!
+#define Delay_Time 15000                                 //Tempo de funcionamento do Modo Online (usado para auto-desligamento).  OBS: é em milisegundos!
 #define YELLOW   7                                       //LED amarelo na porta digital 7
 #define GREEN   8                                        //LED verde na porta digital 8
 
@@ -50,7 +50,7 @@ void setup()
   balanca.set_scale(calibration_factor);                  // configura a escala da Balança
   balanca.tare();                                         // Zera a balança
   //************ Inicialização do SD *************
-  if (!sd.begin(chipSelect, SPI_HALF_SPEED)){      //Testar futaramente para SPI_FULL_SPEED
+  if (!sd.begin(chipSelect, SPI_FULL_SPEED)){      //Testar futaramente para SPI_FULL_SPEED
     while(falha_sd == 1){
       digitalWrite(YELLOW, LOW);               // Caso o módulo/cartão falhem em iniciar, ou não estejam presente, o LED amarelo começara a piscar
       delay(300);
@@ -75,7 +75,8 @@ void setup()
   delay(100);
   digitalWrite(GREEN, HIGH);
   balanca.tare();
-  delay(30000);
+  delay(5000);
+  digitalWrite(GREEN, LOW);
   tempo_inicial = millis();
 }
  
@@ -94,7 +95,7 @@ void loop()
       dataFile.print(SpaceString);                        // O SpaceString é usada para separar os números do sensor_data e sensor_time 
       dataFile.println(sensor_time);                       // Escreve o tempo que as medições foram feitas, em forma de float, e pula uma linha
 
-    if((millis() - tempo_inicial) >= (Delay_time)){
+    if((millis() - tempo_inicial) >= (Delay_Time)){
       dataFile.close();
       while(millis()> 0){                                 // Quando a operação terminar, os LED acenderão intercalando, rapidamente
       digitalWrite(GREEN, HIGH);
